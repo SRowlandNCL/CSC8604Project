@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Smart Bird Feeder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Smart Bird Feeder</h1>
+  <div> <img src = "Bird0.jpg" id = 'birdsamount' /> </div>
+   
+
+    
+
+    <p>
+    
+      <span id="birds"> </span>
+      <button onclick = "updateBirds()">Update</button>
+    </p>
+    <script>
+
+      async function updateBirds() {
+        const response = await fetch ('/birds')
+        if (!response.ok) throw new Error('Failure during fetch')
+        const result = await response.json()
+        const text = 'Bird Count: '  + result.birds
+        document.getElementById('birds').innerText=text
+        var imageSelect = result.birds
+        var birdsimage = document.getElementById('birdsamount')
+
+        if (imageSelect == 1) birdsimage.src = 'Bird1.jpg';
+        if (imageSelect == 2) birdsimage.src = 'Bird2.jpg';
+        if (imageSelect == 3) birdsimage.src = 'Bird3.jpg';
+        if (imageSelect == 4) birdsimage.src = 'Bird4.jpg';
+        if (imageSelect == 5) birdsimage.src = 'Bird5.jpg';
+      }
+
+     
+    </script>
+
+</body>
+</html>
