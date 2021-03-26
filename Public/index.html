@@ -1,3 +1,8 @@
+<!-- HTML Example provided within the module found here : Practical-Web1-HelloHTML
+Original Author Dan Jackson Editing Author Scarlett Rowland  
+
+This html file outlines a simple webviewer, with an image changing based on passed variable -->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,17 +12,12 @@
 </head>
 <body>
   <h1>Smart Bird Feeder</h1>
-  <div> <img src = "Bird0.jpg" id = 'birdsamount' /> </div>
-   
-
-    
-
+  <div> <img src = "Bird0.jpg" id = 'birdsamount' /> </div> <!-- default image for the webpage, id created to be used in the async function-->
     <p>
-    
       <span id="birds"> </span>
-      <button onclick = "updateBirds()">Update</button>
+      <button onclick = "updateBirds()">Update</button> <!-- Clicking this button calls the async function updateBirds -->
     </p>
-    <!-- This script -->
+    <!-- This async function allows the variable from the server.mjs file to be passed into this HTML, in order for the correct image to be presented -->
 
     <script>
 
