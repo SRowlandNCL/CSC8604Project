@@ -1,1 +1,2 @@
-# CSC8604Project
+# CSC8604 Project
+Scarlett Rowland b60068913
