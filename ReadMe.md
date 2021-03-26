@@ -1,5 +1,9 @@
 BirdFeeder-01 Read Me File
 
+This project is for CSC8604 - Technologies for HCI, Newcastle University MSc HCI
+This project was built within Visual Code Studio, and the Micro:Bit code was created using blocks at https://makecode.microbit.org/
+This prototype is a way of using accelerometer and PIR sensors to trigger BlueTooth advertising. These BlueTooth signals are formatted by the scanbird.mjs into event variables. Using the event variable, different images are diplayed within a webpage to represent the data. 
+
 SCAN BIRD
 
 Eddystone Beacon Example provided within the module found here : Practical-IoT5-WearbleAndEmbeddedComputing
@@ -15,13 +19,15 @@ SERVER
 Server Example provided within the module found here : Practical-Web4-ServerSide Web API
 Original Author Dan Jackson Editing Author Scarlett Rowland
 
+This server passes the event variable to the HTML file.
 
 HTML
 
 HTML Example provided within the module found here : Practical-Web1-HelloHTML
 Original Author Dan Jackson Editing Author Scarlett Rowland
 
-The html dislpays a different image dependant of the variable passed through it.
+Using an async function, the html dislpays a different image dependant of the variable passed through it.
+This function is called using a button (Update) on the webpage. 
 
 CSS
 CSS Example provided within the module found here : Practical-Web1-HelloHTML
